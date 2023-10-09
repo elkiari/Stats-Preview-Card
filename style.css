@@ -1,0 +1,208 @@
+:root {
+    --background-color: #0A0C1B;
+    --container-color: #1C1938;
+    --main-color: #FFFFFF;
+    --second-color: #b6b5bf;
+    --third-color: #A365D0;
+
+    --font-size1: 36px;
+    --font-size2: 16px;
+    --font-size3: 25px;
+    --font-size4: 28px;
+    --font-size5: 14px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    list-style: none;
+    text-decoration: 0;
+    background-color: var(--background-color);
+    color: #FFFFFF;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 90px 20px;
+    padding-bottom: 25px;
+    background-color: var(--container-color);
+    border-radius: 8px;
+}
+
+.image img{
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+    filter: hue-rotate(90deg);
+}
+
+span {
+    color: var(--third-color);
+}
+
+.info h1{
+    font-size: var(--font-size4);
+    padding: 20px 30px 0px 30px;
+}
+
+.info p{
+    font-size: var(--font-size2);
+    font-weight: 200;
+    line-height: 25px;
+    color: var(--second-color);
+    padding: 0px 30px 25px 30px;
+    
+}
+
+.rating {
+    font-size: var(--font-size3);
+    margin-bottom: -10px;
+}
+
+.rating-p {
+    color: var(--second-color);
+    font-size: var(--font-size5);
+    font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 23px;
+}
+
+@media (min-width: 700px) {
+    .container {
+        max-width: 1110px;
+        display: flex;
+        flex-direction: row;
+        flex-flow: row-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        text-align: left;
+        padding-bottom: 0px;
+        margin: 0;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 0px 50px;
+    }
+
+    .ratings {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+    }
+    
+    .ratings > div {
+        flex: 1;
+        text-align: left;
+        margin: 0 0px; 
+    }
+
+    .image img{
+        border-radius: 0px 8px 8px 0px;
+        width: auto;
+        content: url(images/image-header-desktop.jpg);
+    }
+
+    .info h1{
+        font-size: var(--font-size1);
+        margin-bottom: -10px;
+        padding: 0;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+    
+    .info p{
+        font-size: var(--font-size2);
+        margin-bottom: 40px;
+        font-weight: 200;
+        line-height: 25px;
+        color: var(--second-color);
+        padding: 0;
+    }
+
+    .rating-p {
+        color: var(--second-color);
+        font-size: var(--font-size5);
+        font-family: 'Lexend Deca', sans-serif;
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 940px) {
+    .container {
+        max-width: 1110px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 0px;
+        text-align: left;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        margin: 10 40px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 0px 30px;
+    }
+
+    .ratings {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+    }
+    
+    .ratings > div {
+        flex: 1;
+        text-align: left;
+        margin: 0 0px; 
+    }
+
+    .image img{
+        border-radius: 0px 8px 8px 0px;
+        width: auto;
+        content: url(images/image-header-desktop.jpg);
+    }
+
+    .info h1{
+        font-size: 22px;
+        margin-bottom: -10px;
+        padding: 0;
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+    
+    .info p{
+        font-size: 14px;
+        margin-bottom: 40px;
+        font-weight: 200;
+        line-height: 25px;
+        color: var(--second-color);
+        padding: 0;
+    }
+
+    .rating-p {
+        color: var(--second-color);
+        font-size: 10px;
+        font-family: 'Lexend Deca', sans-serif;
+        margin-bottom: 0px;
+    }
+
+    .rating {
+        font-size: 15px;
+    }
+}
